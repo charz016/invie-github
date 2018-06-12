@@ -5,11 +5,12 @@
     <title></title>
   </head>
 <style media="screen" >
+
 body
 {
 margin: 0;
-border: 10px solid red;
 }
+
 img
 {
 max-width: 100%;
@@ -17,14 +18,45 @@ vertical-align: top;
 
 }
 
+img#responsive{
+    display: none;
+  }
+
+@media screen and (max-width: 768px) {
+  img#responsive{
+      display: block;
+    }
+    img#h1{
+        display: none;
+      }
+      img#h2{
+          display: none;
+        }
+        img#h3{
+            display: none;
+          }
+          img#h4{
+              display: none;
+            }
+            img#h5{
+                display: none;
+              }
+
+}
+
 </style>
 
   <body>
 
-<img src="header.jpg">
-<img src="hero.jpg">
-<img src="clasica.jpg">
-<img src="acustica.jpg">
+<img src="invie-responsive.png" id="responsive">
+<img src="header.jpg" id="h1">
+<img src="hero.jpg" id="h2">
+<img src="clasica.jpg" id="h3">
+<img src="acustica.jpg" id="h4">
+<img src="footer.jpg" id="h5">
+
+
+
 
   </body>
 </html>
